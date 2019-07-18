@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Michael Young">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <h1 id="title">Survey</h1>
+    <p id="description">Please provide your personal information.</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name: </label>
+      <input id="name" type="text" placeholder="John Smith" required><br>
+      <label id="email-label" for="email">Email: </label>
+      <input id="email" type="email" placeholder="example@email.com" required><br>
+      <label id="number-label" for="number">Input Number: </label>
+      <input id="number" type="number" min="0001" max="9999" placeholder="9999"><br>
+      <label id="dropdown-lable">How did you hear about us?</label>
+      <select id="dropdown">
+        <option value="Facebook">Facebook</option>
+        <option value="Instagram">Instagram</option>
+        <option value="Google">Google Search</option>
+        <option value="Other">Other</option></select>
+      <br>
+         <p>Have you been here before?</p>
+         <input id="yes" name="radio" type="radio" value="Yes">
+         <label id="yes-label" for="yes">Yes</label>
+         <input id="no" name="radio" type="radio" value="No">
+         <label id="no-label" for="no">No</label>
+      <br>
+      <p>Medical issues (Select all that apply):</p>
+      <input id="Allergies" type="checkbox" value="Allergies">
+      <label id="allergies-label" for="Allergies">Allergies</label>
+      <input id="allergies-list" type="text" placeholder="List all separated by commas." style="width: 200px"><br>
+      <input id="Seizures" type="checkbox" value="Seizures">
+      <label id="seizures-label" for="Seizures">Seizures</label><br>
+      <input id="Heart" type="checkbox" value="Heart-Problems">
+      <label id="heart-lable" for="Heart">Heart Problems</label><br>
+      <input id="Diabetes" type="checkbox" value="Diabetes">
+      <label id="diabetes-label" for="Diabetes">Diabetes</label><br>
+      <lable id="comments-label" for="comments">Additional Comments</label><br>
+      <textarea id="comments" style="width:300px; height:100px;"></textarea>     
+      <button id="submit" type="submit">Submit</button>
+      
+      
+    </form>
+  </body>
+</html> 
